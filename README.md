@@ -1,2 +1,3 @@
 HW.
-in the last slide in the pdf file: react-hooks-presentation.pdf
+- go over the lesson.
+- go over and implement the mui presentation.
