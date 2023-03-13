@@ -1,5 +1,7 @@
-import { Typography, Divider, Box, Chip } from "@mui/material";
-
+import { Typography, Divider, Box, Chip, Button, IconButton } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const TypographyComponent = () => {
 
@@ -31,9 +33,9 @@ const TypographyComponent = () => {
                 <Typography p={1} >item 1</Typography>
                 <Divider orientation="vertical" flexItem> CENTER</Divider>
                 <Typography p={1}>item 2</Typography>
-                <Divider  orientation="vertical" flexItem> LEFT</Divider>
+                <Divider orientation="vertical" flexItem> LEFT</Divider>
                 <Typography p={1}>item 3</Typography>
-                <Divider  orientation="vertical" flexItem> RIGHT</Divider>
+                <Divider orientation="vertical" flexItem> RIGHT</Divider>
                 <Typography p={1}>item 4</Typography>
             </Box>
 
@@ -49,8 +51,23 @@ const TypographyComponent = () => {
                 <Typography p={1}>item 4</Typography>
             </>
 
-            <Box m={2} display="flex" justifyContent="space-between">
-                
+            <Box sx={{ "& button": { m: 1 } }}>
+                <Button size="large" variant="contained" color="success" endIcon={<SendIcon />}>Send</Button>
+                <Button size="medium" variant="outlined" color="warning" endIcon={<AddShoppingCartIcon />}>maybe</Button>
+                <Button size="small" variant="text" color="info" startIcon={<DeleteIcon />}>cancel</Button>
+
+                <IconButton size="large" color="success" aria-label="send" >
+                    <DeleteIcon />
+                </IconButton >
+                <IconButton size="large" color="success" aria-label="send" disabled>
+                    <SendIcon/>
+                </IconButton >
+                <IconButton size="large" color="success" aria-label="send" disabled>
+                    <AddShoppingCartIcon fontSize="large"/>
+                </IconButton >
+
+
+
             </Box>
 
             {/* 
