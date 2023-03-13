@@ -16,7 +16,7 @@ const PageHeader = () => {
             <h2 style={headLineStyle}>{header}</h2>
             <p style={{color: 'green', marginTop: "5px"}}> inline style</p>
             <p className="blue"> style from module</p>
-            <h4>One</h4>
+           
         </>
     );
 }
