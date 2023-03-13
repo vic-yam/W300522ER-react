@@ -1,4 +1,4 @@
-import { Typography, Divider, Box, Chip, Button, IconButton } from "@mui/material";
+import { Typography, Divider, Box, Chip, Button, IconButton, Card, CardHeader } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -60,16 +60,20 @@ const TypographyComponent = () => {
                     <DeleteIcon />
                 </IconButton >
                 <IconButton size="large" color="success" aria-label="send" disabled>
-                    <SendIcon/>
+                    <SendIcon />
                 </IconButton >
                 <IconButton size="large" color="success" aria-label="send" disabled>
-                    <AddShoppingCartIcon fontSize="large"/>
+                    <AddShoppingCartIcon fontSize="large" />
                 </IconButton >
-
-
 
             </Box>
 
+            <Card sx={{ width: 200, m: 2 }} variant="outlined">
+                <CardHeader title="card header" subheader="card subheader"></CardHeader>
+            </Card>
+            <Card sx={{ width: 200, m: 2 }} square raised>
+                <CardHeader title="card header" subheader="card subheader"></CardHeader>
+            </Card>
             {/* 
             <Typography fontWeight={700} variant="h4" component="div">One</Typography>
             <Typography fontWeight={300} variant="h1" component="div">One</Typography>
