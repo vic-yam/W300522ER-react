@@ -1,4 +1,4 @@
-import { Typography, Divider, Box } from "@mui/material";
+import { Typography, Divider, Box, Chip } from "@mui/material";
 
 
 const TypographyComponent = () => {
@@ -29,12 +29,29 @@ const TypographyComponent = () => {
 
             <Box display="flex">
                 <Typography p={1} >item 1</Typography>
-                <Divider orientation="vertical" flexItem/>
+                <Divider orientation="vertical" flexItem> CENTER</Divider>
                 <Typography p={1}>item 2</Typography>
-                <Divider orientation="vertical" flexItem/>
+                <Divider  orientation="vertical" flexItem> LEFT</Divider>
                 <Typography p={1}>item 3</Typography>
+                <Divider  orientation="vertical" flexItem> RIGHT</Divider>
+                <Typography p={1}>item 4</Typography>
             </Box>
 
+            <>
+                <Typography p={1} >item 1</Typography>
+                <Divider> CENTER</Divider>
+                <Typography p={1}>item 2</Typography>
+                <Divider textAlign="left" > LEFT</Divider>
+                <Typography p={1}>item 3</Typography>
+                <Divider textAlign="right" >
+                    <Chip label="2" />
+                </Divider>
+                <Typography p={1}>item 4</Typography>
+            </>
+
+            <Box m={2} display="flex" justifyContent="space-between">
+                
+            </Box>
 
             {/* 
             <Typography fontWeight={700} variant="h4" component="div">One</Typography>
