@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Divider, Box } from "@mui/material";
 
 
 const TypographyComponent = () => {
@@ -27,7 +27,15 @@ const TypographyComponent = () => {
                 color: "warning.contrastText"
             }}>SX</Typography>
 
-            
+            <Box display="flex">
+                <Typography p={1} >item 1</Typography>
+                <Divider orientation="vertical" flexItem/>
+                <Typography p={1}>item 2</Typography>
+                <Divider orientation="vertical" flexItem/>
+                <Typography p={1}>item 3</Typography>
+            </Box>
+
+
             {/* 
             <Typography fontWeight={700} variant="h4" component="div">One</Typography>
             <Typography fontWeight={300} variant="h1" component="div">One</Typography>
