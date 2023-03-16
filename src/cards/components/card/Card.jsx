@@ -1,5 +1,6 @@
 import { CardActionArea } from '@mui/material';
 import MuiCard from '@mui/material/Card';
+import CardHead from './CardHead';
 
 const Card = () => {
   const card = {
@@ -34,7 +35,7 @@ const Card = () => {
   return (
     <MuiCard sx={{minWidth: 280, maxWidth: 350}}>
         <CardActionArea>
-            
+            <CardHead image={card.image} />
         </CardActionArea>
     </MuiCard>
   );
