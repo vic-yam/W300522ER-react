@@ -1,7 +1,7 @@
 import { Typography, Box } from "@mui/material";
 
-const ChildComp = ({ name }) => {
-  const { firstName, lastName } = name;
+const ChildComp = () => {
+
   return (
     <>
       <Box

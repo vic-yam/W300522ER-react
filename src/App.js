@@ -1,7 +1,7 @@
 import './App.css';
-import ChildComp from './components/ChildComponent';
+import ChildComp from './sandbox/components/ChildComponent';
 import PageHeader from './components/PageHeader';
-import TypographyComponent from './components/TypographyComponent';
+import TypographyComponent from './sandbox/components/TypographyComponent';
 
 function App() {
   const hwString = 'Hello World';
@@ -10,7 +10,7 @@ function App() {
     <div className="App"  >
       <PageHeader />
       {/* <TypographyComponent /> */}
-      <ChildComp name={name} />
+      <ChildComp firstName={name.firstName} lastName={name.lastName}  />
     </div>
   );
 }
