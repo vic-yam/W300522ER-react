@@ -8,7 +8,7 @@ import {
 
 const CardBody = ({ card }) => {
   const { title, subtitle, phone, address, bizNumber } = card;
-  const { state, city, houseNumber } = address;
+  const { street, city, houseNumber } = address;
 
   return (
     <CardContent>
@@ -21,6 +21,13 @@ const CardBody = ({ card }) => {
       <Box mt={1}>
         <Typography variant="body2" color="text.secondary">
           <Typography variant="subtitle2" component="strong">Phone:{" "}</Typography> {phone}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          <Typography variant="subtitle2" component="strong">Address:{" "}</Typography> 
+          {street} {houseNumber} {city}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          <Typography variant="subtitle2" component="strong">Card Number:{" "}</Typography> {bizNumber}
         </Typography>
       </Box>
     </CardContent>
