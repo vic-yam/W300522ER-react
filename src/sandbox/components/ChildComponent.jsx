@@ -16,7 +16,7 @@ const ChildComp = () => {
         }}
       >
         <Typography variant="h1"> child component</Typography>
-        <Typography>{firstName} - {lastName}</Typography>
+        {/* <Typography>{firstName} - {lastName}</Typography> */}
       </Box>
     </>
   );
