@@ -4,6 +4,7 @@ import './App.css';
 // import TypographyComponent from './sandbox/components/TypographyComponent';
 import Cards from './cards/components/Cards'
 import OnClick from './sandbox/events/OnClick';
+import FatherPropTypes from './sandbox/propTypes/FatherPropTypes';
 
 function App() {
   // const hwString = 'Hello World';
@@ -13,8 +14,9 @@ function App() {
       {/* <PageHeader /> */}
       {/* <TypographyComponent /> */}
       {/* <ChildComp firstName={name.firstName} lastName={name.lastName}  /> */}
-      <Cards></Cards>
-      <OnClick></OnClick>
+      {/* <Cards></Cards>
+      <OnClick></OnClick> */}
+      <FatherPropTypes />
     </div>
   );
 }
