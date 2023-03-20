@@ -2,7 +2,7 @@ import './App.css';
 // import ChildComp from './sandbox/components/ChildComponent';
 // import PageHeader from './components/PageHeader';
 // import TypographyComponent from './sandbox/components/TypographyComponent';
-// import Cards from './cards/components/Cards'
+import Cards from './cards/components/Cards'
 import OnClick from './sandbox/events/OnClick';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       {/* <PageHeader /> */}
       {/* <TypographyComponent /> */}
       {/* <ChildComp firstName={name.firstName} lastName={name.lastName}  /> */}
-      {/* <Cards></Cards> */}
+      <Cards></Cards>
       <OnClick></OnClick>
     </div>
   );
