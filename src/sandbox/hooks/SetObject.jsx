@@ -48,6 +48,11 @@ export const SetObject = () => {
           })
         }
       />
+      <input
+        type="text"
+        placeholder="Enter email"
+        
+      />
     </form>
   );
 };
