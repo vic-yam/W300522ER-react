@@ -1,24 +1,17 @@
-import "./pageHeader.css";
+import { Divider, Typography } from "@mui/material";
 
-
-const PageHeader = () => {
-    const header = "pageHeader works! string interpolation";
-    
-    const headLineStyle = {
-        color: "red",
-        fontFamily: "Roboto, sans-serif"
-    };
-
-    // React.createElement("h2", {style: headLineStyle}, header);
-
-    return (
-        <>
-            <h2 style={headLineStyle}>{header}</h2>
-            <p style={{color: 'green', marginTop: "5px"}}> inline style</p>
-            <p className="blue"> style from module</p>
-           
-        </>
-    );
-}
+const PageHeader = ({ title, subtitle }) => {
+  return (
+    <>
+      <Typography variant="h2" component="h1">
+        {title}
+      </Typography>
+      <Typography variant="h5" component="h2">
+        {subtitle}
+      </Typography>
+      <Divider sx={{ my: 2 }} />
+    </>
+  );
+};
 
 export default PageHeader;
