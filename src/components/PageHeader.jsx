@@ -1,4 +1,5 @@
 import { Divider, Typography } from "@mui/material";
+import { string } from "prop-types";
 
 const PageHeader = ({ title, subtitle }) => {
   return (
@@ -12,6 +13,11 @@ const PageHeader = ({ title, subtitle }) => {
       <Divider sx={{ my: 2 }} />
     </>
   );
+};
+
+PageHeader.propTypes = {
+    title: string.isRequired,
+    subtitle: string.isRequired,
 };
 
 export default PageHeader;

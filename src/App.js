@@ -4,6 +4,7 @@ import './App.css';
 // import TypographyComponent from './sandbox/components/TypographyComponent';
 import Cards from './cards/components/Cards'
 import CardsPage from './cards/pages/CardsPage';
+import AboutPage from './pages/AboutPage';
 import OnClick from './sandbox/events/OnClick';
 import FatherPropTypes from './sandbox/propTypes/FatherPropTypes';
 
@@ -18,8 +19,8 @@ function App() {
       {/* <Cards></Cards>
       <OnClick></OnClick> */}
       {/* <FatherPropTypes /> */}
-      <CardsPage />
-
+      {/* <CardsPage /> */}
+      <AboutPage />
     </div>
   );
 }
