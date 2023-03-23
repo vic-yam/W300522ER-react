@@ -44,14 +44,19 @@ export const SetObject = () => {
             name: {
               ...user.name,
               lastName: e.target.value,
-            }
+            },
           })
         }
       />
       <input
         type="text"
         placeholder="Enter email"
-        
+        onChange={(e) =>
+          setUser({
+            ...user,
+            email: e.target.value,
+          })
+        }
       />
     </form>
   );

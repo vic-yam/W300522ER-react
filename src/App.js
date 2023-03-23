@@ -7,6 +7,7 @@ import CardsPage from './cards/pages/CardsPage';
 import AboutPage from './pages/AboutPage';
 import OnClick from './sandbox/events/OnClick';
 import { SetCounter } from './sandbox/hooks/SetCounter';
+import { SetObject } from './sandbox/hooks/SetObject';
 import FatherPropTypes from './sandbox/propTypes/FatherPropTypes';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       {/* <CardsPage /> */}
       <AboutPage />
       <SetCounter></SetCounter>
+      <SetObject></SetObject>
     </div>
   );
 }
