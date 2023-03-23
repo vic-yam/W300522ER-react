@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const SetArray = () => {
   const INITIAL_TODO = { todo: "" };
   const [task, setTask] = useState(INITIAL_TODO);
@@ -25,7 +27,11 @@ export const SetArray = () => {
       </form>
 
       <ul>
-        
+        {tasks.map((task, index) => (
+            <li key={index}>
+               {index + 1}. {task.todo}
+            </li>
+        ))}
       </ul>
     </div>
   );
