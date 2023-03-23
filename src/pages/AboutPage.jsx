@@ -2,14 +2,12 @@ import { Container, Grid } from "@mui/material";
 import PageHeader from "../components/PageHeader";
 
 const AboutPage = () => {
-  let a = 1;
   return (
     <Container maxWidth="lg">
       <PageHeader
         title="About Page"
         subtitle="On this page you can find explanations about using the application"
       />
-      <button onClick={() => (a = a + 1)}>{a}</button>
 
       <Grid container spacing={2}>
         <Grid item xs={12} md={8} alignSelf="center">
