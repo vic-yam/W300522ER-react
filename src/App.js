@@ -3,6 +3,7 @@ import './App.css';
 // import PageHeader from './components/PageHeader';
 // import TypographyComponent from './sandbox/components/TypographyComponent';
 import Cards from './cards/components/Cards'
+import CardsPage from './cards/pages/CardsPage';
 import OnClick from './sandbox/events/OnClick';
 import FatherPropTypes from './sandbox/propTypes/FatherPropTypes';
 
@@ -16,7 +17,9 @@ function App() {
       {/* <ChildComp firstName={name.firstName} lastName={name.lastName}  /> */}
       {/* <Cards></Cards>
       <OnClick></OnClick> */}
-      <FatherPropTypes />
+      {/* <FatherPropTypes /> */}
+      <CardsPage />
+
     </div>
   );
 }

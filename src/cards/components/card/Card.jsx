@@ -1,8 +1,11 @@
 import { CardActionArea } from "@mui/material";
 import MuiCard from "@mui/material/Card";
+import { func } from "prop-types";
+import cardType from "../../models/types/cardType";
 import CardActionBar from "./CardActionBar";
 import CardBody from "./CardBody";
 import CardHead from "./CardHead";
+
 
 const Card = ({ card, handleDeleteCard, handleLikeCard }) => {
   return (
@@ -19,5 +22,11 @@ const Card = ({ card, handleDeleteCard, handleLikeCard }) => {
     </MuiCard>
   );
 };
+
+Card.propTypes = {
+  card: cardType.isRequired,
+  handleDeleteCard: func.isRequired,
+  handleLikeCard: func.isRequired,
+}
 
 export default Card;
