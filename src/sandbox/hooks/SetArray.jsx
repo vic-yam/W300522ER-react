@@ -11,10 +11,10 @@ export const SetArray = () => {
     setTasks([...tasks, task]);
     setTask(INITIAL_TODO);
   };
-
+  
   return (
     <div>
-      <form>
+      <form >
         <h5>
           Todo: <span style={{ fontWeight: "bolder" }}>{task.todo}</span>
         </h5>
@@ -28,9 +28,9 @@ export const SetArray = () => {
 
       <ul>
         {tasks.map((task, index) => (
-            <li key={index}>
-               {index + 1}. {task.todo}
-            </li>
+          <li key={index}>
+            {index + 1}. {task.todo}
+          </li>
         ))}
       </ul>
     </div>
